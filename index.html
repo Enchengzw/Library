@@ -11,8 +11,26 @@
     <div class="Library">
         <div class="header">Library</div>
         <div class="library_grid">
-            <!-- <button type="Add_book"></button> -->
+            <button class="add">Add New Book</button>
         </div>
     </div>
+    <dialog class="dialog">
+        <form class="form">
+            <div class="inputs">
+                <input type="text" id="title" placeholder="Title">
+            </div>
+            <div class="inputs">
+                <input type="text" id="author" placeholder="Author">
+            </div>
+            <div class="inputs">
+                <input type="text" id="pages" pattern="\d{1,4}" placeholder="Number of pages">
+                <span class="error-message">Only accepts numeric digits, 4 maximun</span>
+            </div>
+            <div class="inputs">
+                <input type="text" id="read" pattern="\d{1,4}" placeholder="Have you read it?">
+            </div>
+            <button class="close">Close</button>
+        </form>
+    </dialog>
 </body>
 </html>

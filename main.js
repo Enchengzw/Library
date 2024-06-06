@@ -1,4 +1,15 @@
 const   myLibrary = [];
+const   dialog = document.querySelector(".dialog");
+const   addButton = document.querySelector(".add");
+const   closeButton = document.querySelector(".close");
+
+addButton.addEventListener("click", () => {
+    dialog.showModal();
+});
+
+closeButton.addEventListener("click", () => {
+    dialog.close();
+});
 
 function Book(title, author, pages, Isread) {
     this.title = title;
@@ -13,10 +24,6 @@ function Book(title, author, pages, Isread) {
 function addBooktoLibrary(title, author, pages, Isread) {
     let to_add = new Book(title, author, pages, Isread);
     myLibrary.push(to_add);
-    console.log(Book.title);
-    console.log(Book.author);
-    console.log(Book.pages);
-    console.log(Book.Isread);
     display();
 }
 
@@ -32,7 +39,7 @@ function display()
     title.textContent = "Title : " + to_display.title;
     author.textContent = "Author : " + to_display.author;
     pages.textContent = "Pages : " + to_display.pages;
-    Isread.textContent = to_display.Isread;
+    Isread.textContent = "Has been read? : " + to_display.Isread;
 
     new_book.appendChild(title);
     new_book.appendChild(author);
