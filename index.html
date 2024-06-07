@@ -10,7 +10,7 @@
 <body>
     <div class="Library">
         <div class="header">Library</div>
-        <div class="library_grid">
+        <div class="library_grid" data = 1>
             <button class="add">Add New Book</button>
         </div>
     </div>
@@ -29,7 +29,10 @@
             <div class="inputs">
                 <input type="text" id="read" pattern="\d{1,4}" placeholder="Have you read it?">
             </div>
-            <button class="close">Close</button>
+            <div class="buttons">
+                <button class="submit" type="submit">Submit</button>
+                <button class="close" type="reset">Close</button>
+            </div>
         </form>
     </dialog>
 </body>

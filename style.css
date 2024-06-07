@@ -40,7 +40,7 @@ html, body {
     background-color: lightcyan;
     display: grid;
     grid-template-columns: 1fr;
-    grid-auto-rows: 60px;
+    grid-auto-rows: 50px;
     justify-content: center;
     align-items: center;
     border-radius: 30px;
@@ -79,8 +79,16 @@ html, body {
     grid-template-columns: 1fr;
 }
 
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 input {
     padding-left: 3px;
+    margin-bottom: 5px;
     width: 300px;
     height: 50px;
     font-size: 25px;
@@ -88,12 +96,18 @@ input {
     border-style: none;
 }
 
-.form > button {
-    margin-right: 40px;
-    width: 150px;
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.buttons > button {
+    width: 100px;
     height: 30px;
-    justify-self: center;
-    align-self: center;
+    border-radius: 10px;
+    align-items: center;
+    border-style: none;
 }
 
 .form > .inputs {
